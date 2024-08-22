@@ -16,7 +16,7 @@ To get started with **Notes App**, follow these steps:
 1. **Clone the Repository**
 
    ```
-   git clone https://github.com/yourusername/notes_app.git
+   git clone https://github.com/shiburajrs/flutter-note-app.git
    cd notes_app
    ```
 
