@@ -23,7 +23,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
   ScrollController _scrollController = ScrollController();
   final FocusNode _focusNode = FocusNode();
   bool _isEditing = false;
-  Color? _selectedColor = Colors.white;
+  Color? _selectedColor = null;
 
   @override
   void initState() {
@@ -65,7 +65,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
           description: description,
           time: time,
           label: label,
-          backgroundColor: _selectedColor!.value,
+          backgroundColor: _selectedColor?.value ?? null,
         );
         await DatabaseService().insertNote(newNote);
       } else {
@@ -75,6 +75,7 @@ class _NoteDetailPageState extends State<NoteDetailPage> {
           description: description,
           time: widget.note!.time,
           label: widget.note!.label,
+          backgroundColor: _selectedColor!.value,
         );
         await DatabaseService().updateNote(updatedNote);
       }

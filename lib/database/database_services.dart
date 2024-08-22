@@ -64,7 +64,7 @@ class DatabaseService {
     List<Note> pinnedNotes = [];
     List<Note> unpinnedNotes = [];
 
-    for (var note in allNotes) {
+    for (var note in allNotes.reversed) {
       if (note.isPinned) {
         pinnedNotes.add(note);
       } else {

@@ -62,13 +62,6 @@ Here are some screenshots of the **Notes App** in action:
 
 ![More options](assets/images/screenshots/more_options.png)
 
-
-## 📚 Usage
-
-- **Add a Note**: Tap the "+" button on the home screen.
-- **Edit a Note**: Select a note from the list to make changes.
-- **Delete a Note**: Swipe left on a note to delete it.
-
 ## 🤝 Contributing
 
 We'd love your contributions! If you have ideas or improvements, please fork the repository and submit a pull request. Open an issue for major changes so we can discuss them first.
