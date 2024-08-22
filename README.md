@@ -40,27 +40,27 @@ Here are some screenshots of the **Notes App** in action:
 
 ### Home Screen
 
-![Home Screen](assets/images/screenshots/homepage.png)
+<img src="assets/images/screenshots/homepage.png" alt="Home Screen" style="width: 300px; height: auto;">
 
 ### Add Note Screen
 
-![Home Screen 2](assets/images/screenshots/homepage_2.png)
+<img src="assets/images/screenshots/homepage_2.png" alt="Add Note Screen" style="width: 300px; height: auto;">
 
 ### Edit Note Screen
 
-![Edit Note Screen](assets/images/screenshots/enter_note.png)
+<img src="assets/images/screenshots/enter_note.png" alt="Edit Note Screen" style="width: 300px; height: auto;">
 
 ### Note Detail Page
 
-![Edit Note Screen](assets/images/screenshots/note_detail_page.png)
+<img src="assets/images/screenshots/note_detail_page.png" alt="Note Detail Page" style="width: 300px; height: auto;">
 
 ### Search Page
 
-![Edit Note Screen](assets/images/screenshots/search_page.png)
+<img src="assets/images/screenshots/search_page.png" alt="Search Page" style="width: 300px; height: auto;">
 
-### More options
+### More Options
 
-![More options](assets/images/screenshots/more_options.png)
+<img src="assets/images/screenshots/more_options.png" alt="More Options" style="width: 300px; height: auto;">
 
 ## 🤝 Contributing
 
