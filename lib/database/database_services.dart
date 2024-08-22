@@ -19,10 +19,8 @@ class DatabaseService {
   }
 
 
-  String dataBaseName = 'notes.db';
-
   Future<Database> _initDatabase() async {
-    final path = join(await getDatabasesPath(), dataBaseName);
+    final path = join(await getDatabasesPath(), 'notes.db');
     return openDatabase(
       path,
       onCreate: (db, version) {
@@ -47,7 +45,7 @@ class DatabaseService {
   Future<void> insertNote(Note note) async {
     final db = await database;
     await db.insert(
-      dataBaseName,
+      'notes',
       note.toMap(),
       conflictAlgorithm: ConflictAlgorithm.replace,
     );
@@ -55,7 +53,7 @@ class DatabaseService {
 
   Future<List<Note>> getNotes() async {
     final db = await database;
-    final List<Map<String, dynamic>> maps = await db.query(dataBaseName);
+    final List<Map<String, dynamic>> maps = await db.query('notes');
 
 
     List<Note> allNotes = List.generate(maps.length, (i) {
@@ -84,7 +82,7 @@ class DatabaseService {
   Future<void> updateNote(Note note) async {
     final db = await database;
     await db.update(
-      dataBaseName,
+      'notes',
       note.toMap(),
       where: 'id = ?',
       whereArgs: [note.id],
